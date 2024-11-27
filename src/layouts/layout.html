@@ -1,0 +1,119 @@
+<!doctype html>
+<html class="no-js" lang="fi">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sompasauna</title>
+  <link rel="stylesheet" href="@styles/style.scss">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="@images/sompaleijona.svg" alt="" /> 
+    </div>
+    <div class="topbar">
+      <h1>Sompasauna</h1>
+      <span class="menu-link link" onclick="openMenu()">Menu<span>
+    </div>
+    <div class="logo">
+      <img src="@images/sompaleijona.svg" alt="" />
+    </div>
+  </header>
+  <div class="side left">
+    <div class="title">
+      <span>
+        Sompasauna
+      </span>
+    </div>
+  </div>
+  <div class="side right">
+    <div class="title">
+      <span>
+        Sompasauna
+      </span>
+    </div>
+  </div>
+  <main>
+    <%~ it.body %>
+  </main>
+  <footer>
+    <section class="contact">
+      <div class="left">
+        <div class="address">
+          Verkkosaarenkuja 6
+          <br />
+          00580 Helsinki
+          <br />
+          sompasauna@sompasauna.fi
+        </div>
+        <div class="address">
+          Y-tunnus: 2661146-7
+          <br />
+          Rahankeräyslupanumero: RA/2023/1573
+        </div>
+      </div>
+      <div class="center">
+        <a href="https://www.instagram.com/sompasauna/" rel="noreferrer" target="_blank" class="some instagram">    
+          <img src="@images/instagram.svg" alt="Sompasauna on Instagram" />
+        </a>
+        <a href="https://www.facebook.com/groups/sompasauna" rel="noreferrer" target="_blank" class="some facebook">
+          <img src="@images/facebook.svg" alt="Sompasauna on Facebook" />
+        </a>
+      </div>
+      <div class="right">
+        <div class="address">
+          Verkkosaarenkuja 6
+          <br />
+          00580 Helsinki
+          <br />
+          sompasauna@sompasauna.fi
+        </div>
+        <div class="address">
+          Y-tunnus: 2661146-7
+          <br />
+          Rahankeräyslupanumero: RA/2023/1573
+        </div>
+      </div>
+    </section>
+    <section>
+      <p class="slogan">Don't be stubid</p>
+    </section>
+  </footer>
+
+  <div class="menu">
+    <div class="controls">
+      <span class="link" onclick="closeMenu()">Menu kii!</span>
+    </div>
+    <div class="navigation">
+      <ul>
+        <li><a href="">Etusivu</a></li>
+        <li><a href="">Saunainfo</a></li>
+        <li><a href="">Yhdistys</a></li>
+        <li><a href="">Saapuminen</a></li>
+        <li><a href="">Lahjoita</a></li>
+        <li><a href="">SafeSompis</a></li>
+        <li><a href="">Medialle</a></li>
+        <li><a href="">Mittarit</a></li>
+      </ul>
+    </div>
+  </div>
+  <script src="@scripts/app.js"></script>
+
+</body>
+
+</html>
