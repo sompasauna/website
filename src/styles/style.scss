@@ -274,6 +274,7 @@ footer {
 
     ul {
       list-style-type: none;
+      padding: 0;
     }
     
     a {
@@ -354,104 +355,48 @@ footer {
   visibility: hidden;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
 
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
-}
-
-.clearfix::after {
-  clear: both;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
-
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
+@media only screen and (max-width: 768px) {
+  .side, .logo {
+    display: none;
   }
 
-  a,
-  a:visited {
-    text-decoration: underline;
+  main {
+    padding: 89px 8px 0; 
   }
-
-  a[href]::after {
-    content: " (" attr(href) ")";
+  header {
+    background-color: $orange;
+    .topbar {
+      width: 100%;
+    }
   }
-
-  abbr[title]::after {
-    content: " (" attr(title) ")";
+  footer {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    padding: 0 8px 8px;
+    section {
+      flex-wrap: wrap-reverse;
+      .left {
+        width: 100%;
+        text-align: center;
+      }
+      .center {
+        width: 100%
+      }
+      .right {
+        display: none;
+      }
+    }
+    .slogan {
+      font-size: calc((100vw) / 14);
+    }
   }
-
-  /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
-
-  pre {
-    white-space: pre-wrap !important;
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
+  .menu {
+    .controls {
+      text-align: center;
+      margin: 24px 0 0 0;
+    }
   }
 }
+
 
